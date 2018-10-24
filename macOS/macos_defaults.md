@@ -7,6 +7,11 @@ Mojave: don't show recent apps in the Dock:
 defaults write com.apple.dock show-recents 0
 ```
 
+Group by app by default in Exposé:
+```sh
+defaults write com.apple.dock expose-group-by-app -bool true
+```
+
 Lighter effect when minimizing an app:
 ```sh
 write com.apple.Dock mineffect scale
@@ -102,6 +107,7 @@ defaults write com.apple.Safari SuppressSearchSuggestions -bool true
 
 Enable the Develop menu and the Web Inspector:
 ```sh
+defaults write com.apple.Safari ShowDevelopMenu -bool true
 defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
