@@ -1,0 +1,9 @@
+*~
+*.bak
+*.sw*
+.\#*
+\#*\#
+._*
+.DS_Store
+.Spotlight-V100
+.Trashes
