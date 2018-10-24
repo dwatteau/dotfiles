@@ -1,0 +1,6 @@
+[diff]
+        # Show renames/moves as such
+        renames = true
+[log]
+        # Automatically --follow when given a single path
+        follow = true
