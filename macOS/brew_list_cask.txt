@@ -1,0 +1,8 @@
+dosbox
+keepassx
+meld
+robo-3t
+rocket-chat
+scummvm
+teeworlds
+wireshark
