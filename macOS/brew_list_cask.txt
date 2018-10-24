@@ -1,8 +1,17 @@
-dosbox
-keepassx
+# chat
+rocket-chat
+
+# development
 meld
 robo-3t
-rocket-chat
+
+# games
+dosbox
 scummvm
 teeworlds
+
+# network
 wireshark
+
+# security
+keepassx

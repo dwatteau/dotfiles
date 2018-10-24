@@ -1,88 +1,79 @@
-ansible
-bash-completion
-boost
-checkbashisms
+# archives
+innoextract
+unrar
+unzip
+xz
+zip
+
+# compilation deps
 cmake
-cmus
-cvs
-faad2
-flac
-flac123
-freetype
-gdbm
-gettext
-glances
-glib
-gmp
-gnu-sed
-gnutls
+pkg-config
+popt
+
+# cool tools I always forget
+pigz
+ripgrep
+textql
+
+# development
+boost
 go
-graphicsmagick
-htop
 httpie
 hyperfine
-innoextract
-jasper
-jpeg
 jq
-lftp
-libao
-libcue
-libevent
-libffi
-libidn
-libidn2
-libogg
-libpng
-libtasn1
-libtiff
-libtool
-libunistring
-libvorbis
-libyaml
-little-cms2
-m-cli
-mad
-makedepend
-mg
-minicom
-mp4v2
-mpg123
-nettle
-nmap
-nyancat
-oniguruma
-openconnect
-openssl
+
+# image manipulation
+graphicsmagick
+jpeg
 optipng
-opus
-opus-tools
-opusfile
-p11-kit
-pcre
-pcre2
-pigz
-pkg-config
 pngquant
-popt
-pwgen
+
+# interoperability
+gnu-sed
+mg
+rpm2cpio
+wine # XXX: "brew pin" it from High Sierra.
+
+# macOS
+m-cli
+
+# music
+cmus
+flac
+flac123
+mpg123
+opus-tools
+
+# must-have tools
+bash-completion
+htop
+tmux
+tree
+wget
+
+# network
+lftp
+minicom
+nmap
+openconnect
+telnet
+
+# Python
 python
 python3
 python@2
-readline
-ripgrep
-rpm2cpio
-shellcheck
-sl
-sqlite
-telnet
-textql
+
+# SCM
+cvs
 tig
-tmux
-tree
-unrar
-unzip
-wget
-wine
-xz
-zip
+
+# security
+openssl
+pwgen
+
+# shell development
+checkbashisms
+shellcheck
+
+# sysadmin
+ansible
