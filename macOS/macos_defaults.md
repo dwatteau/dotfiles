@@ -149,7 +149,7 @@ defaults write com.apple.systemsound com.apple.sound.uiaudio.enabled -bool false
 
 No feedback when volume is changed:
 ```sh
-defaults write NSGlobalDomain com.apple.sound.beep.feedback -bool false
+defaults write -g com.apple.sound.beep.feedback -bool false
 ```
 
 No Mac startup sound:
@@ -210,7 +210,7 @@ defaults write com.apple.dock showAppExposeGestureEnabled -bool true
 
 No automatic spelling correction:
 ```sh
-defaults write NSGlobalDomain WebAutomaticSpellingCorrectionEnabled -bool false
+defaults write -g WebAutomaticSpellingCorrectionEnabled -bool false
 ```
 
 Calendar: always show week numbers:
