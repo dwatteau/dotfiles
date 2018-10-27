@@ -1,0 +1,46 @@
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+        The Regents of the University of California.  All rights reserved.
+Copyright (c) 1995-2018 OpenBSD. All rights reserved.  https://www.OpenBSD.org
+
+OpenBSD 6.4 (GENERIC.MP) #0: Fri Oct 12 03:51:59 UTC 2018
+    visa@octeon:/usr/src/sys/arch/octeon/compile/GENERIC.MP
+real mem = 536870912 (512MB)
+avail mem = 523829248 (499MB)
+mainbus0 at root: board 20002 rev 2.18
+cpu0 at mainbus0: CN50xx CPU rev 0.1 500 MHz, Software FP emulation
+cpu0: cache L1-I 32KB 4 way D 16KB 64 way, L2 128KB 8 way
+cpu1 at mainbus0: CN50xx CPU rev 0.1 500 MHz, Software FP emulation
+cpu1: cache L1-I 32KB 4 way D 16KB 64 way, L2 128KB 8 way
+clock0 at mainbus0: int 5
+octcrypto0 at mainbus0
+iobus0 at mainbus0
+simplebus0 at iobus0: "soc"
+octciu0 at simplebus0
+cn30xxsmi0 at simplebus0
+com0 at simplebus0: ns16550a, 64 byte fifo
+com0: console
+dwctwo0 at iobus0 base 0x1180068000000 irq 56
+usb0 at dwctwo0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 "Octeon DWC2 root hub" rev 2.00/1.00 addr 1
+octrng0 at iobus0 base 0x1400000000000 irq 0
+cn30xxgmx0 at iobus0 base 0x1180008000000
+cnmac0 at cn30xxgmx0: RGMII, address XX:XX
+atphy0 at cnmac0 phy 7: AR8035 10/100/1000 PHY, rev. 2
+cnmac1 at cn30xxgmx0: RGMII, address XX:XX
+atphy1 at cnmac1 phy 6: AR8035 10/100/1000 PHY, rev. 2
+cnmac2 at cn30xxgmx0: RGMII, address XX:XX
+atphy2 at cnmac2 phy 5: AR8035 10/100/1000 PHY, rev. 2
+/dev/ksyms: Symbol table not valid.
+umass0 at uhub0 port 1 configuration 1 interface 0 " USB DISK 2.0" rev 2.00/1.00 addr 2
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, initiator 0
+sd0 at scsibus0 targ 1 lun 0: <, USB DISK 2.0, PMAP> SCSI4 0/direct removable serial.13fe42006504D1370F24
+sd0: 3824MB, 512 bytes/sector, 7831552 sectors
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+boot device: sd0
+root on sd0a (4911d89406605e7e.a) swap on sd0b dump on sd0b
+WARNING: No TOD clock, believing file system.
+WARNING: CHECK AND RESET THE DATE!

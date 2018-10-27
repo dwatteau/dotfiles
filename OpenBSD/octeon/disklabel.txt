@@ -1,0 +1,24 @@
+disklabel -p m sd0 
+# /dev/rsd0c:
+type: SCSI
+disk: SCSI disk
+label: USB DISK 2.0    
+duid: 4911d89406605e7e
+flags:
+bytes/sector: 512
+sectors/track: 63
+tracks/cylinder: 255
+sectors/cylinder: 16065
+cylinders: 487
+total sectors: 7831552 # total bytes: 3824.0M
+boundstart: 65600
+boundend: 7831552
+drivedata: 0 
+
+16 partitions:
+#                size           offset  fstype [fsize bsize   cpg]
+  a:           517.1M            65600  4.2BSD   2048 16384  8273 # /
+  c:          3824.0M                0  unused                    
+  d:          2047.3M          1124544  4.2BSD   2048 16384 12958 # /usr
+  e:          1227.6M          5317504  4.2BSD   2048 16384 12958 # /var
+  i:            32.0M               64   MSDOS
