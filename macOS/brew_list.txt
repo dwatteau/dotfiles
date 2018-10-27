@@ -1,22 +1,30 @@
 # archives
 innoextract
+p7zip
+unarj
 unrar
 unzip
 xz
 zip
 
 # compilation deps
+bsdmake
 cmake
+makedepend
+nasm
 pkg-config
 popt
+yasm
 
 # cool tools I always forget
+mdcat
 pigz
 ripgrep
 textql
 
 # development
 boost
+gcc
 go
 httpie
 hyperfine
@@ -29,20 +37,26 @@ optipng
 pngquant
 
 # interoperability
+dosfstools
 gnu-sed
+mandoc
 mg
 rpm2cpio
-wine # XXX: "brew pin" it from High Sierra.
+wine
 
 # macOS
 m-cli
 
 # music
+bchunk
 cmus
+ffmpeg
 flac
 flac123
-mpg123
+lame
 opus-tools
+shntool
+sox
 
 # must-have tools
 bash-completion
@@ -54,6 +68,7 @@ wget
 # network
 lftp
 minicom
+mtr
 nmap
 openconnect
 telnet
@@ -77,3 +92,7 @@ shellcheck
 
 # sysadmin
 ansible
+
+# VMs
+simh
+qemu

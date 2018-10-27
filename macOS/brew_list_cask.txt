@@ -1,4 +1,4 @@
-# chat
+# (bad) chat
 rocket-chat
 
 # development
@@ -10,8 +10,18 @@ dosbox
 scummvm
 teeworlds
 
+# MS Paint-like
+paintbrush
+
+# music
+meta
+
 # network
 wireshark
 
 # security
 keepassx
+
+# utils
+etcher
+maccpuid
