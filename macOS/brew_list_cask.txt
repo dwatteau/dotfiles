@@ -1,6 +1,3 @@
-# (bad) chat
-rocket-chat
-
 # development
 meld
 robo-3t

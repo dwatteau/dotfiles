@@ -5,3 +5,4 @@ syntax on
 colorscheme elflord
 set mouse=
 set hlsearch
+set listchars+=nbsp:␣
