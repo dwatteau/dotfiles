@@ -2,23 +2,27 @@ disklabel -p m sd0
 # /dev/rsd0c:
 type: SCSI
 disk: SCSI disk
-label: USB DISK 2.0    
-duid: 4911d89406605e7e
+label: Cruzer Fit
+duid: 89a8f952e23bd6b2
 flags:
 bytes/sector: 512
 sectors/track: 63
 tracks/cylinder: 255
 sectors/cylinder: 16065
-cylinders: 487
-total sectors: 7831552 # total bytes: 3824.0M
+cylinders: 1945
+total sectors: 31260672 # total bytes: 15264.0M
 boundstart: 65600
-boundend: 7831552
+boundend: 31260672
 drivedata: 0 
 
 16 partitions:
 #                size           offset  fstype [fsize bsize   cpg]
-  a:           517.1M            65600  4.2BSD   2048 16384  8273 # /
-  c:          3824.0M                0  unused                    
-  d:          2047.3M          1124544  4.2BSD   2048 16384 12958 # /usr
-  e:          1227.6M          5317504  4.2BSD   2048 16384 12958 # /var
+  a:           372.5M            65600  4.2BSD   2048 16384  5935 # /
+  b:           525.0M           828448    swap                    # none
+  c:         15264.0M                0  unused
+  d:           476.0M          1903648  4.2BSD   2048 16384  7585 # /tmp
+  e:          3897.2M          2878464  4.2BSD   2048 16384 12958 # /var
+  f:          2055.2M         10859936  4.2BSD   2048 16384 12958 # /usr
+  g:          1231.5M         15068960  4.2BSD   2048 16384 12958 # /usr/local
+  h:          4102.5M         17591168  4.2BSD   2048 16384 12958 # /home
   i:            32.0M               64   MSDOS
