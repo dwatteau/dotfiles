@@ -1,6 +1,6 @@
 # `defaults`
 
-**Note:** These were done on Mojave. Big Sur might not you change all of them by default.
+**Note:** These were done on Mojave. Big Sur might not let you change all of them by default.
 
 Also see <https://macos-default.com>.
 
@@ -51,7 +51,7 @@ Disable Dashboard:
 defaults write com.apple.dashboard mcx-disabled -bool true
 ```
 
-Don’t automatically rearrange Spaces based on most recent use:
+Don't automatically rearrange Spaces based on most recent use:
 ```sh
 defaults write com.apple.dock mru-spaces -bool false
 ```
@@ -65,7 +65,7 @@ defaults write com.apple.menuextra.battery ShowPercent -string YES
 
 Tolerable fonts on non-Retina displays with Mojave (restart the session):
 ```sh
-# /!\ ONLY on non-Retina displays! /!\
+# /!\ ONLY on non-Retina displays! /!\ Big Sur doesn't have it anymore, it seems…
 defaults -currentHost write -globalDomain AppleFontSmoothing -int 2
 ```
 
