@@ -1,23 +1,22 @@
 case "$-" in
 *i*)
-	if [ -f /usr/local/etc/bash_completion ]; then
-		. /usr/local/etc/bash_completion
-		. /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash
-	fi
+	# Kill "!" stuff
+	set +o histexpand
 
-	# Go
-	#export GOPATH=~/git/go
-	#export PATH=$PATH:$GOPATH/bin
-
-	alias ls="ls -GFC"
+	alias ls='ls -GFC'
 	alias vi=nvi
+	alias grep='grep --color'
+	alias gerp=grep
+	alias grpe=grep
+	alias localip='ipconfig getifaddr en0'
+	alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
+	. /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash
 	export PS1='\h:\w\$ '
-
-	# Too slow
-	#GIT_PS1_SHOWDIRTYSTATE=true
-	#export PS1='\h:\w$(__git_ps1)\$ '
 	;;
 esac
+
+# Bash on Catalina and newer
+export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # Wine
 export WINEARCH=win32

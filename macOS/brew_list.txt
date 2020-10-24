@@ -1,5 +1,6 @@
 # archives
 innoextract
+pigz
 p7zip
 unarj
 unrar
@@ -17,35 +18,48 @@ popt
 yasm
 
 # cool tools I always forget
+bat
+dust
+fd
+grex
+httpstat
+hyperfine
+procs
 mdcat
-pigz
-ripgrep
+rename
+sd
 textql
 
 # development
-boost
+bfg
 gcc
-go
 httpie
-hyperfine
 jq
+nvi
+
+# file recovery
+ddrescue
+testdisk
 
 # image manipulation
 graphicsmagick
 jpeg
 optipng
+pngcrush
 pngquant
 
 # interoperability
 dosfstools
 gnu-sed
+gnu-tar
 mandoc
-mg
 rpm2cpio
-wine
+watch
+#wine
 
 # macOS
 m-cli
+wifi-password
 
 # music
 bchunk
@@ -59,27 +73,33 @@ shntool
 sox
 
 # must-have tools
-bash-completion
 htop
+md5sha1sum
+ripgrep
 tmux
 tree
 wget
 
 # network
+arping
+bandwhich
+ipcalc
+iperf3
 lftp
 minicom
 mtr
 nmap
 openconnect
+openssl@1.1
 telnet
+unbound
 
 # Python
-python
 python3
-python@2
 
 # SCM
 cvs
+mercurial
 tig
 
 # security
@@ -91,8 +111,11 @@ checkbashisms
 shellcheck
 
 # sysadmin
-ansible
+ansible-lint
+glances
+rsync
 
-# VMs
+# VMs, containers
+dive
 simh
 qemu

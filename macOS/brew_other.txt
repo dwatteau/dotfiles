@@ -1,16 +1,33 @@
+# Stuff on the App Store, or bought online
+
 ## Paid apps
 
+CrossOver
 Magnet
 Meta
 Microsoft Office
+SoundSource
 VMWare
+Wipr
 
 ## Other apps
 
+AdGuard
+Battery Health 2
+Boxer
+cd to ..
+Colloquy
+ColorSlurp
 CotEditor
+Docker
 Karabiner Elements
+Microsoft Remote Desktop
 Mini Calendar
+New File Menu Free
 Skitch
+TimeMachineEditor
+TunnelBlick
 Typora
+Wireguard
 
 TODO: `brew cask` as much as possible?

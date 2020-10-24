@@ -1,24 +1,36 @@
 # development
-meld
+fork
+hex-fiend
 robo-3t
 
 # games
 dosbox
+openemu
+sameboy
 scummvm
 teeworlds
+
+# IM
+mattermost
 
 # MS Paint-like
 paintbrush
 
 # music
 meta
+ocenaudio
 
 # network
 wireshark
 
 # security
-keepassx
+keepassxc
+
+# sysadmin
+vagrant
+vagrant-manager
 
 # utils
 etcher
 maccpuid
+michaelvillar-timer

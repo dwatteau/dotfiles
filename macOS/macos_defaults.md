@@ -1,20 +1,19 @@
 # `defaults`
 
+**Note:** These were done on Mojave. Big Sur might not you change all of them by default.
+
+Also see <https://macos-default.com>.
+
 ## Dock
 
 Mojave: don't show recent apps in the Dock:
 ```sh
-defaults write com.apple.dock show-recents 0
-```
-
-Group by app by default in Exposé:
-```sh
-defaults write com.apple.dock expose-group-by-app -bool true
+defaults write com.apple.dock show-recents -bool true
 ```
 
 Lighter effect when minimizing an app:
 ```sh
-write com.apple.Dock mineffect scale
+defaults write com.apple.Dock mineffect -string scale
 ```
 
 Lock the Dock size (*once you've properly configured it!*):
@@ -34,15 +33,15 @@ Keep folders on top when sorting by name (restart Finder):
 defaults write com.apple.Finder _FXSortFoldersFirst -bool true
 ```
 
+Don't show internal hard drives on the desktop:
+```sh
+defaults write com.apple.Finder ShowHardDrivesOnDesktop -bool false
+```
+
 Avoid creating `.DS_Store` files on network volumes or USB drives:
 ```sh
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
-```
-
-Don't show internal hard drives on the desktop:
-```sh
-defaults write com.apple.Finder ShowHardDrivesOnDesktop -bool false
 ```
 
 ## General UI
@@ -72,8 +71,6 @@ defaults -currentHost write -globalDomain AppleFontSmoothing -int 2
 
 ## Safari
 
-**XXX:** test this.
-
 Default homepage is `about:blank`:
 ```sh
 defaults write com.apple.Safari HomePage -string 'about:blank'
@@ -98,11 +95,6 @@ defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
 Always prefer tabs:
 ```sh
 defaults write com.apple.Safari TabCreationPolicy -int 2
-```
-
-No search engine suggestions:
-```sh
-defaults write com.apple.Safari SuppressSearchSuggestions -bool true
 ```
 
 Enable the Develop menu and the Web Inspector:
@@ -205,6 +197,26 @@ defaults write com.apple.dock showAppExposeGestureEnabled -bool true
     version = 5;
 }
 ```
+
+## Notifications
+
+Ignore Catalina nag screens on Mojave:
+```sh
+sudo softwareupdate --ignore "macOS Catalina"
+defaults delete com.apple.preferences.softwareupdate LatestMajorOSSeenByUserBundleIdentifier
+defaults write com.apple.systempreferences AttentionPrefBundleIDs 0
+killall Dock
+```
+
+## Disable Hyper-Threading
+
+Reboot in Recovery Mode, and then type this in Terminal:
+```sh
+nvram boot-args="cwae=2"
+nvram SMTDisable=%01
+```
+
+And then reboot again.
 
 ## Various
 
