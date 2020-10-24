@@ -1,5 +1,5 @@
 # rockbox configuration file on xDuoo X3
 
-http://xvtx.ru/rockbox/download.htm
+Uses this: <https://build.rockbox.org/data/rockbox-xduoox3.zip>
 
 Theme: `Classic` or `Hi-Fi`, replicating the Sansa Clip+.
