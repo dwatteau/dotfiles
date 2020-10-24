@@ -1,6 +1,13 @@
+# This is Git's per-user configuration file.
+[transfer]
+	fsckObjects = true
+[alias]
+	co = checkout
+	chekcout = checkout
+	cehckout = checkout
+	gerp = grep
+	grpe = grep
 [diff]
-        # Show renames/moves as such
-        renames = true
+	renames = true
 [log]
-        # Automatically --follow when given a single path
-        follow = true
+	follow = true
