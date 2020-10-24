@@ -1,8 +1,7 @@
-" Don't need anything fancy.
 set nocompatible
 set nobackup
 syntax on
 colorscheme elflord
-set mouse=
+set smartindent
 set hlsearch
-set listchars+=nbsp:␣
+set mouse=
