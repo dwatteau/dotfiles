@@ -1,5 +1,6 @@
 bzip2
 colorls
+curl
 git
 htop
 links+--no_x11

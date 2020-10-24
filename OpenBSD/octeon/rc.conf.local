@@ -1,7 +1,7 @@
 dhcpd_flags="vether0"
+library_aslr=NO
 nsd_flags=
-ntpd_flags=-s
+ntpd_flags=
 slaacd_flags=NO
 sndiod_flags=NO
 unbound_flags=
-library_aslr=NO
