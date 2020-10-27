@@ -6,3 +6,5 @@ XTerm*utf8:true
 XTerm.vt100.faceName:Terminus
 XTerm.vt100.faceSize:12
 XTerm.vt100.visualBell:false
+XTerm.vt100.scrollBar:true
+XTerm.vt100.rightScrollBar:true
