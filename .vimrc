@@ -1,4 +1,3 @@
-set nocompatible
 set nobackup
 syntax on
 colorscheme elflord

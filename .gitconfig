@@ -7,7 +7,5 @@
 	cehckout = checkout
 	gerp = grep
 	grpe = grep
-[diff]
-	renames = true
 [log]
 	follow = true
