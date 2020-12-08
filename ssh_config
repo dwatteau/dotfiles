@@ -1,1 +1,6 @@
-HashKnownHosts yes
+Host *
+        IdentitiesOnly yes
+        ServerAliveInterval 120
+        TCPKeepAlive yes
+        #UseKeychain yes
+        #AddKeysToAgent yes
