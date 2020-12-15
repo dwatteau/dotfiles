@@ -6,3 +6,4 @@ set smartindent
 set hlsearch
 set mouse=
 autocmd BufNewFile,BufRead *.toml setf dosini
+autocmd BufNewFile,BufRead Dockerfile.* set syntax=dockerfile
