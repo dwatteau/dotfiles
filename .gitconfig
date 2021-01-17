@@ -9,3 +9,5 @@
 	grpe = grep
 [log]
 	follow = true
+[pull]
+	rebase = false
