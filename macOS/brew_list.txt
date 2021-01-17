@@ -3,7 +3,7 @@ innoextract
 pigz
 p7zip
 unarj
-unrar
+#unrar
 unzip
 xz
 zip
