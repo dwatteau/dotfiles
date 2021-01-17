@@ -9,6 +9,7 @@ case "$-" in
 	alias gerp=grep
 	alias grpe=grep
 	alias localip='ipconfig getifaddr en0'
+	alias pascii='perl -ne "print \"$. _\" if m/[\x80-\xFF]/"'
 	alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
 	. /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash
 	export PS1='\h:\w\$ '
